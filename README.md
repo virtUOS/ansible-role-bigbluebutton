@@ -12,17 +12,21 @@ Also check [Before you install](https://docs.bigbluebutton.org/administration/in
 
 ---
 
-- ℹ️ PR [#275](https://github.com/ebbba-org/ansible-role-bigbluebutton/pull/275) removed the option of installing Greenlight. Please checkout another project for Greenlight support
-- ℹ️ PR [#276](https://github.com/ebbba-org/ansible-role-bigbluebutton/pull/276) removed the option of installing coturn. Please checkout another project for coturn support
+> [!NOTE]
+> PR [#275](https://github.com/ebbba-org/ansible-role-bigbluebutton/pull/275) removed the option of installing Greenlight. Please checkout another project for Greenlight support
+
+> [!NOTE]
+> PR [#276](https://github.com/ebbba-org/ansible-role-bigbluebutton/pull/276) removed the option of installing coturn. Please checkout another project for coturn support
 
 ---
 
 
 ## Role Variables
 
-> ⚠️ **WATCH OUT FOR _REQUIRED_ VARIABLES!** ⚠️
-
-> ⚠️ **IF NOT SET THIS ROLE WILL FAIL!** ⚠️
+> [!WARNING]
+>  **WATCH OUT FOR _REQUIRED_ VARIABLES!**
+>
+> **IF NOT SET THIS ROLE WILL FAIL!**
 
 | Required | Variable Name | Function | Default value | Comment |
 | -------- | ------------- | -------- | ------------ | ------- |
@@ -136,6 +140,7 @@ Also check [Before you install](https://docs.bigbluebutton.org/administration/in
 | | `bbb_ufw_reject_networks_custom` | List of additional networks to be rejected by UFW | Not defined | |
 | | `bbb_ssh_port` | Allow and limit the port used for SSH access | `22` | |
 | | `bbb_max_file_size_upload`| Maximum file size for an uploaded presentation (default 30MB - number must be in byte) | 30000000| |
+| | `bbb_http_session_timeout` | Timeout (seconds) to invalidate inactive HTTP sessions. | `14400` | 4 Hours |
 | | `bbb_default_max_users` | Default maximum number of users a meeting can have | `0` | Meeting doesn't have a user limit |
 | | `bbb_default_meeting_duration` | Default duration of the meeting in minutes | `0` | Meeting doesn't end |
 | | `bbb_max_num_pages` | Maximum number of pages allowed for an uploaded presentation | `200` | |
